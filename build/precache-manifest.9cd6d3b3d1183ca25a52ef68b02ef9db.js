@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/ScaniaSansSemiCondensed-Bold.b749013c.woff2"
   },
   {
-    "revision": "9445a2c832d460a5c758",
-    "url": "/static/css/main.c11ff213.chunk.css"
+    "revision": "276bf6eca89a9118b505",
+    "url": "/static/css/main.a84ee87c.chunk.css"
   },
   {
-    "revision": "f1992f38cc356526f39e",
-    "url": "/static/js/1.f1992f38.chunk.js"
+    "revision": "08e3d1b2e1c3f1efeaf7",
+    "url": "/static/js/1.08e3d1b2.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -17,15 +17,15 @@ self.__precacheManifest = [
   },
   {
     "revision": "109a7fdeacb528a2b339746c1ad28c71",
-    "url": "/static/media/tinymce.109a7fde.ttf"
-  },
-  {
-    "revision": "109a7fdeacb528a2b339746c1ad28c71",
     "url": "/static/media/tinymce-small.109a7fde.ttf"
   },
   {
-    "revision": "9445a2c832d460a5c758",
-    "url": "/static/js/main.9445a2c8.chunk.js"
+    "revision": "109a7fdeacb528a2b339746c1ad28c71",
+    "url": "/static/media/tinymce.109a7fde.ttf"
+  },
+  {
+    "revision": "276bf6eca89a9118b505",
+    "url": "/static/js/main.276bf6ec.chunk.js"
   },
   {
     "revision": "8eb03871e6046162efce5f2cdf5fa849",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/static/media/verdana.7264cc65.ttf"
   },
   {
-    "revision": "b88d9d89796d83626a3eefffed7e85f5",
+    "revision": "e46907a8d72f03ed45ba9dd3489f9b23",
     "url": "/index.html"
   }
 ];

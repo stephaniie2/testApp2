@@ -5,6 +5,7 @@ import Main from "./Router";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import Popups from "./shared/Popups";
+import NavBar from "./shared/NavBar";
 
 export default class App extends React.Component {
 
@@ -32,6 +33,7 @@ await this.loadScript("/scripts/main/login.js");
 render() {
   return (
     <div className="app">
+      <NavBar />
     <div id="header">
         <p>Media Library</p>
     </div>

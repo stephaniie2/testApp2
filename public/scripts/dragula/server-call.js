@@ -8,9 +8,9 @@ function getTurnJSinfo(element) {
 
 function fetchDragulaData(currentView) {
   //og("start Dragula");
-  m3.getImagesOnPages(25969115, currentView, relevantPub);
-  
-  function relevantPub(relPub) {    
+  m3.getImagesOnPages(25969125, currentView, relevantPub);
+
+  function relevantPub(relPub) {
     $('#dragula_left').empty();
     relPub.forEach(function (element) {
       $("#dragula_left").append(addData(element));
