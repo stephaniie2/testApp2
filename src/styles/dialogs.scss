@@ -1,0 +1,222 @@
+/********** dialog boxes ***********/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px;
+    padding: 25px;
+    background: linear-gradient(#acbac1, #8ea2ac);
+    box-shadow: 2px 2px 2px #333333;
+    border-radius: 8px;
+    width: 425px;
+    display: none;
+    font-family: sans-serif;
+    color: white;
+    font-size: small;
+  }
+
+  #wait {
+    background: linear-gradient(#919191, #525252);
+    width: 350px;
+  }
+
+  #login_popup {
+    position: absolute;
+    top: -300px;
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(#919191, #525252);
+    box-shadow: 2px 2px 2px #444444;
+    border-radius: 8px;
+    border: 1px solid #333333;
+    border-top-color: #a0a0a0;
+    z-index: 3;
+  }
+
+  #login_popup button {
+    margin-left: 10px;
+  }
+
+    #login_popup .title {
+      margin-top: 25px;
+    }
+
+  .label {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    font-family: sans-serif;
+    font-size: larger;
+  }
+
+  tr.fluffy > td {
+    padding-top: 0.8em;
+  }
+
+  input[type="text"] {
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  input[type="password"] {
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  input[type="text"]::selection {
+    background: black;
+    color: red;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+  }
+
+  button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 2px;
+    border: 0;
+    font-weight: bold;
+  }
+
+  button.green {
+    background: linear-gradient(greenyellow, green);
+    color: var(--defaultTxtColor);
+  }
+
+  button.green:hover {
+    color: darkgreen;
+  }
+
+  button.grey {
+    background: linear-gradient(silver, grey);
+    color: #0b333c;
+  }
+
+  button.grey:hover {
+    background: silver;
+  }
+
+  select {
+    height: 24px;
+  }
+
+  /***********
+  https://css-tricks.com/css3-progress-bars/
+  ***********/
+  .meter {
+    height: 24px;
+    position: relative;
+    margin: 20px 0 20px 0;
+    /* background: #555; */
+    /* border-radius: 25px; */
+    /* box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3); */
+  }
+
+  .meter > span {
+    display: block;
+    height: 100%;
+    background-color: #2bc253;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, #2bc253),
+      color-stop(1, #54f054)
+    );
+    /*background-image: -moz-linear-gradient( center bottom, rgb(43,194,83) 37%, rgb(84,240,84) 69% );*/
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  .meter > span:after,
+  .animate > span > span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 100%,
+      color-stop(0.25, rgba(255, 255, 255, 0.2)),
+      color-stop(0.25, transparent),
+      color-stop(0.5, transparent),
+      color-stop(0.5, rgba(255, 255, 255, 0.2)),
+      color-stop(0.75, rgba(255, 255, 255, 0.2)),
+      color-stop(0.75, transparent),
+      to(transparent)
+    );
+    background-image: -moz-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 75%,
+      transparent
+    );
+    z-index: 1;
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    -webkit-animation: move 2s linear infinite;
+    -webkit-border-radius: 20px 8px 8px 20px;
+    -moz-border-radius: 20px 8px 8px 20px;
+    border-radius: 20px 8px 8px 20px;
+    overflow: hidden;
+  }
+
+  .animate > span:after {
+    display: none;
+  }
+
+  @-webkit-keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 50px;
+    }
+  }
+
+  .orange > span {
+    background-color: #f1a165;
+    background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #f1a165),
+      color-stop(1, #f36d0a)
+    );
+    background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+  }
+
+  .red > span {
+    background-color: #f0a3a3;
+    background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #f0a3a3),
+      color-stop(1, #f42323)
+    );
+    background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+  }
+
+  .nostripes > span > span,
+  .nostripes > span:after {
+    -webkit-animation: none;
+    background-image: none;
+  }

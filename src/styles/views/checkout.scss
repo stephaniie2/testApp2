@@ -1,0 +1,109 @@
+/* SelectBoxes for Checkout Page */
+.selectBoxPicType {
+    width: 450px;
+  }
+  
+  .selectBoxUnitType {
+    width: 70px;
+  }
+  
+  .settings {
+    display: flex;
+    flex-direction: row;
+    padding: 21px;
+    margin-bottom: 32px;
+  }
+  
+  .settings .menuItem .no_margin {
+    margin: 0 10px 0 0 !important;
+  }
+  
+  /** Image Placeholder for Checkout */
+  .img_placeholder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "IKEA Sans Regular", "IKEA Sans", Verdana, Arial, sans-serif;
+    margin-left: 20px;
+  }
+  
+  .img_placeholder .selected_image {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    margin-right: 100px;
+  }
+  
+  .img_placeholder .selected_image .imgBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 45px;
+  }
+  
+  .img_placeholder .selected_image .imgBox p {
+    margin-top: 8px;
+    font-size: $font-smaller;
+    font-family: $main-font;
+  }
+  
+  .img_placeholder .selected_image .imgBox .image-container:hover {
+    border: 1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  
+  .img_placeholder .selected_image .imgBox .image-container .assetItem {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 8px;
+  }
+  
+  .img_placeholder .selected_image .imgConfig {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img_placeholder .selected_image .imgInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+  
+  .img_placeholder .selected_image .imgInfo p {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+  
+  .imgSettings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .imgSettings > div {
+    margin-bottom: 6px;
+  }
+  
+  .imgSettings .sizeSetting {
+    display: flex;
+  }
+  
+  .imgSettings .sizeSetting .output {
+    margin-left: 10px;
+  }
+  
+  .imgSettings .sizeSetting .output1 {
+    margin-left: 10px;
+  }
+  
+  .imgSettings .sizeSetting .output2 {
+    margin-left: 10px;
+  }
+  
+  .imgSettings .sizeSetting .output3 {
+    margin-left: 10px;
+  }

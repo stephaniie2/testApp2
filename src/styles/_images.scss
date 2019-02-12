@@ -1,0 +1,40 @@
+
+
+/* turnJS - Controller - Input Number visibility */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* Images of Result Page - Right Box */
+.img_add_all {
+    background: url("../styles/images/add.png") no-repeat left;
+}
+
+.img_remove_all {
+    background: url("../styles/images/delete.png") no-repeat left;
+    margin-right: 20px;
+}
+
+.img_checkout {
+    background: url("../styles/images/cart_1.png") no-repeat left;
+    text-decoration: none;
+    color: white;
+}
+
+/* Images of Result Page - Controls */
+.controls_previousButton {
+    background: transparent url("../styles/images/prev.png") no-repeat center;
+}
+
+.controls_nextButton {
+    background: transparent url("../styles/images/next.png") no-repeat center;
+}
+
+.controls_zoomLeftPage {
+    background: transparent url("../styles/images/zoom_in.png") no-repeat center;
+}
+
+.controls_zoomRightPage {
+    background: transparent url("../styles/images/zoom_in.png") no-repeat center;
+}

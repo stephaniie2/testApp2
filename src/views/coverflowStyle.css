@@ -1,0 +1,173 @@
+.apibar {
+  display: none;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+  
+  .apibar-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    font-size: 11.899px;
+    font-size: 0.7rem;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+    background-color: #dedede;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .apibar-button:hover {
+    color: #f2f2f2;
+    background-color: #bebebe;
+  }
+  
+  .apibar-button input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .coverflow {
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-touch-callout: none;
+  }
+  
+  .coverflow .coverflow-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .coverflow .coverflow-tray,
+  .coverflow .coverflow-rect {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .coverflow .coverflow-tray,
+  .coverflow .coverflow-cell {
+    pointer-events: none;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: -moz-transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: -ms-transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: -o-transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .coverflow .coverflow-hit {
+    position: absolute;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .coverflow .coverflow-cell canvas {
+    pointer-events: none;
+    outline: 1px solid transparent;
+    position: absolute;
+  }
+  
+  .coverflow-text {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .coverflow-text h1,
+  .coverflow-text h2 {
+    margin: 0;
+  }
+  
+  .player_controls {
+    border-top: 1px solid black;
+    width: 0;
+    overflow: hidden;
+    white-space:nowrap; /*Keep text always one line*/
+    transition: width 1s;
+    background: linear-gradient(#8F8F8F, #686868, #656565);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #333333;
+    display: block;
+    margin-bottom: 6px;
+    border-top-color: #B1B1B1;
+    font-family: "IKEA Sans Regular", "IKEA Sans", Verdana, Arial, sans-serif;
+    position: absolute;
+    z-index: 50;
+}
+/*@todo Bugg 1: Coverflows Inforuta f?rflyttar Coverflow.*/
+.player_controls.grow {
+    width: 300px;
+    border: 1px solid #191919;
+    padding: 10px;
+
+}
+
+.player_controls .heading {
+    margin-bottom: 5%;
+}
+
+.player_controls .image {
+    margin-right: 10%;
+    width: 100px;
+}
+
+.player_controls .info {
+    margin-right: 10%;
+
+}
+
+.player_controls .info p {
+    margin-bottom: 5px;
+
+}
+
+.player_container .right {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.player_container .right_info {
+    display: flex;
+    flex-direction: column;
+}
+
+#player, #player2 {
+    background: none !important;
+    height: 250px !important;
+}
+
+.coverflow .coverflow-wrap {
+    /*right: 40%;*/
+}
+
+.coverflow-hit:hover {
+    cursor: pointer;
+}

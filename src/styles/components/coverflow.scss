@@ -1,0 +1,61 @@
+.player_controls {
+    border-top: 1px solid black;
+    width: 0;
+    overflow: hidden;
+    white-space:nowrap; /*Keep text always one line*/
+    transition: width 1s;
+    background: $container-bg;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #333333;
+    display: block;
+    margin-bottom: 6px;
+    border-top-color: #B1B1B1;
+    font-family: "IKEA Sans Regular", "IKEA Sans", Verdana, Arial, sans-serif;
+    position: absolute;
+}
+/*@todo Bugg 1: Coverflows Inforuta f?rflyttar Coverflow.*/
+.player_controls.grow {
+    width: 360px;
+    border: 1px solid #191919;
+    padding: 10px;
+}
+
+.player_controls .heading {
+    margin-bottom: 5%;
+}
+
+.player_controls .image {
+    margin-right: 10%;
+    width: 100px;
+}
+
+.player_controls .info {
+    margin-right: 10%;
+
+}
+
+.player_controls .info p {
+    margin-bottom: 5px;
+
+}
+
+.player_container .right {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.player_container .right_info {
+    display: flex;
+    flex-direction: column;
+}
+
+#player, #player2 {
+    background: none !important;
+    height: 250px !important;
+}
+
+.coverflow-hit:hover {
+    cursor: pointer;
+}

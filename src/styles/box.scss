@@ -1,0 +1,162 @@
+/******* box ***********/
+  /* Result container box style */
+  .boxCard {
+    background: $container-bg;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #333333;
+    border: 1px solid #191919;
+    border-top-color: #b1b1b1;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 5px;
+  }
+
+  .boxCard-header {
+    font-size: $font-smaller;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+  }
+
+  /** Search Result View */
+  #view_searchResult {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  #view_searchResult .boxCard {
+    height: 100vh;
+    width: 100%;
+  }
+
+  #view_searchResult .boxCard-body {
+    flex-grow: 1;
+  }
+
+  #view_searchResult .boxCard-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /** Home View */
+  #view_home .boxCard-footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  #view_home .boxCard .bottom {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 2%;
+}
+
+  /** Browse View */
+  #view_browse .boxCard-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  #view_browse .boxCard .boxCard-body {
+    display: contents;
+  }
+
+  .boxButton {
+    padding: 5px;
+    color: #9f9f9f;
+  }
+
+  .boxButton:hover {
+    background-color: #bbfabd;
+    cursor: pointer;
+    color: black;
+  }
+
+  .boxButton:active {
+    background-color: #8ff791;
+  }
+
+  .boxButton p {
+    font-family: $main-font;
+    padding-left: 15px;
+    font-size: $font-smaller;
+  }
+
+  /*** Results */
+  /* leftMain */
+  .leftMain {
+    flex: 2;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+
+  .leftMain .boxCard-body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftMain .boxCard-footer input {
+    width: 5%;
+    margin: auto;
+  }
+
+  .rightMain {
+    display: flex;
+    flex: 1;
+  }
+
+  .rightMain .boxCard {
+    height: 50%;
+  }
+
+  .rightMain .boxCard-body {
+    flex-grow: 1;
+    overflow: auto;
+    display: flex !important;
+  }
+
+  .rightMain .boxCard:first-child {
+    margin-bottom: 10px;
+  }
+
+  /*** Checkout */
+  #view_order .boxCard {
+    height: 100vh;
+  }
+
+  #view_order .BoxCard-body {
+    flex-grow: 1;
+  }
+
+  #view_order .boxCard-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orderButton {
+    padding: 5px;
+    background: $order-button-bg;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    margin: 5px 0 0 4px;
+    font-size: smaller;
+  }
+
+  #view_order .boxCard .banner {
+    padding: 5px;
+    background: linear-gradient(#dfdfdf, #acacac);
+    font-size: $font-smaller;
+    font-family: sans-serif;
+    border-top-color: #b1b1b1;
+    color: black;
+    border: 0;
+  }
+
+  #view_order .boxCard .banner p {
+    font-weight: $font-bold;
+  }

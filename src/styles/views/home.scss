@@ -1,0 +1,16 @@
+#welcome {
+    display: none;
+    padding-bottom: 17px;
+    padding-top: 13px;
+    font-family: Verdana, serif;
+  }
+  
+  .float_left {
+    float: left;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

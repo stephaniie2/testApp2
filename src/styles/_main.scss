@@ -1,0 +1,186 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'images.scss';
+
+// Styles
+@import 'box.scss';
+@import 'dialogs.scss';
+@import 'menu.scss';
+@import 'views/home.scss';
+@import 'views/checkout.scss';
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a:-webkit-any-link {
+  color: #9f9f9f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  margin: 2px;
+  padding: 1px;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(black, #ebebeb, white) fixed;
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#cbccc8)) fixed;*/
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  font-family: $main-font;
+  color: $main-text-color;
+  font-size: small;
+}
+
+.center {
+  text-align: center;
+  margin: 15px 0 5px 0;
+}
+
+.w100 {
+  width: 100px;
+}
+
+.w200 {
+  width: 200px;
+}
+
+.w300 {
+  width: 300px;
+}
+
+.app {
+  padding: 0 8px 0 8px;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+#header {
+  padding: 3px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  margin-bottom: 14px;
+  background: white url(../styles/images/header.png) no-repeat right 10px top;
+  color: black;
+  margin-top: 8px;
+}
+
+#header p {
+  margin-left: 14px;
+}
+
+#view_home {
+  display: none;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#view_browse {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+#view_browse > div {
+  flex-direction: column;
+}
+
+
+
+#view_order {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Disable border around input boxes */
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+/********** footer ***********/
+.footer {
+  font-size: xx-small;
+  color: black;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  flex: 0 1 20px;
+  font-family: $info-font;
+  padding: 5px;
+}
+
+.footer-popup {
+  position: absolute;
+  bottom: 0;
+  width: 99vw;
+}
+
+/* Disable blue border around input boxes */
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+/*!* Resets Positions *!*/
+/**,*/
+/**:after,*/
+/**:before {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*box-sizing: border-box;*/
+/*position: relative;*/
+/*}*/
